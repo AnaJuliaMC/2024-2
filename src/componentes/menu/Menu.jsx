@@ -6,8 +6,12 @@ import { NavLink } from "react-router-dom";
 export function Menu() {
 
     const getEstilo= () => {
-        let estilo = "flex items-center gap-3 px-3 py-5 hover:bg-slate-800 hover:text-slate-200 "
-        return estilo
+        let estiloInicial = "flex items-center gap-3 px-3 py-5 hover:bg-slate-800 hover:text-slate-200 "
+    
+        let estiloAtivo = "text-red-500"
+
+        return estiloFinal;
+
 
     };
 
