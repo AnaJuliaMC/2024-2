@@ -3,7 +3,7 @@ import {Menu} from "../componentes/menu/Menu"
 
 export function Layout(){
     return(
-        <div className="">
+        <div className="flex ">
             <Menu />
             <Outlet />
         </div>

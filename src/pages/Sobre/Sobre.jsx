@@ -1,6 +1,6 @@
 export function Sobre(){
     return(
-        <div className="flex">
+        <div className="flex w-full">
             Sobre
         </div>
     )
