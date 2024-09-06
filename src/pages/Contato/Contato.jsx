@@ -1,8 +1,6 @@
-import styles from "./Contato.module.css"
-
 export function Contato(){
     return(
-        <div className={styles.Contato}>
+        <div className="flex bg-green-300">
             Contato
         </div>
     )

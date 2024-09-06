@@ -1,9 +1,7 @@
-import styles from './Menu.module.css'
-
 export function Menu(){
 
     return (
-        <div className={styles.Menu}>
+        <div className="bg-slate-400 w-60 h-screen">
             MENU
         </div>
     )

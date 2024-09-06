@@ -6,6 +6,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import { Contato} from './pages/Contato/Contato'
 import { Sobre } from './pages/Sobre/Sobre'
 import {Pagina404} from './pages/Pagina404/Pagina404'
+import { Layout } from './pages/Layout'
 
 
 // const rotas = createBrowserRouter([
@@ -16,7 +17,7 @@ import {Pagina404} from './pages/Pagina404/Pagina404'
 // ])
 
 const rotas = createBrowserRouter(createRoutesFromElements(
-  <Route path='/'>
+  <Route path='/' element={<Layout/>}>
     <Route index element={<Home/>}/>
     <Route path='home' element={<Home/>}/>
     <Route path='contato' element={<Contato/>}/>
