@@ -1,7 +1,9 @@
+import Pagina from "../../componentes/Pagina"
+
 export function Contato(){
     return(
-        <div className="flex bg-green-300 w-full">
-            Contato
-        </div>
+        <Pagina titulo="Contato" subtitulo="informações">
+
+        </Pagina>
     )
 }
