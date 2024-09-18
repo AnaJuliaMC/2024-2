@@ -4,15 +4,13 @@ import Pagina from "../componentes/Pagina"
 export default function Estado1(){
     let numero=11
 
-    const estado = useState(0)
-    const num = estado[0]
-    const alteraNum = estado[1]
+    const [num, SetNum] = useState(0)
+    // const estado = useState(0)
+    // const num = estado[0]
+    // const alteraNum = estado[1]
 
     function incrementar(){
-        numero = numero + 1
-        console.log(numero)
-
-        alteraNum(200)
+        SetNum(num + 1)
 
     }
 
