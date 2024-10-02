@@ -1,12 +1,18 @@
 import { Outlet } from "react-router-dom";
-import {Menu} from "../componentes/menu/Menu"
+import { Menu } from "../componentes/Menu"
 
-export function Layout(){
-    return(
-        <div className="flex ">
-            <Menu />
-            <Outlet />
-        </div>
-
-    )
+export function Layout() {
+  return (
+    <div
+      className={`
+        flex 
+        w-screen h-screen       
+    `}
+    >
+      <Menu />
+      <main className="flex flex-1">
+        <Outlet />
+      </main>
+    </div>
+  );
 }
