@@ -17,16 +17,11 @@ import { SemEstado } from "./pages/estado/SemEstado";
 import { ComEstado } from "./pages/estado/ComEstado";
 import { CampoTexto } from "./pages/estado/CampoTexto";
 import { Contador } from "./pages/estado/Contador";
-import { ComunicaçãoDireta } from "./pages/Comunicação/ComunicaçãoDireta";
-import { ComunicaçãoIndireta } from "./pages/Comunicação/ComunicaçãoIndireta";
+import { ComunicacaoDireta } from "./pages/Comunicacao/ComunicacaoDireta";
+import { ComunicacaoIndireta } from "./pages/Comunicacao/ComunicacaoIndireta";
+import { UseRef } from "./pages/hooks-basico/UseRef";
+import { UseEffect } from "./pages/hooks-basico/UseEffect";
 
-// const rotas = createBrowserRouter([
-//   {path:"/", element: <Home/>},
-//   {path:"/home", element: <Home/>},
-//   {path:"/contato", element: <Contato/>},
-//   {path:"/sobre", element: <Sobre/>},
-//   {path:"*", element: <Pagina404/>},
-// ])
 
 const rotas = createBrowserRouter(
   createRoutesFromElements(
@@ -39,8 +34,10 @@ const rotas = createBrowserRouter(
       <Route path="comEstado" element={<ComEstado/>} />
       <Route path="campoTexto" element={<CampoTexto/>} />
       <Route path="contador" element={<Contador/>} />
-      <Route path="ComunicaçãoDireta" element={<ComunicaçãoDireta/>} />
-      <Route path="ComunicaçãoIndireta" element={<ComunicaçãoIndireta/>} />
+      <Route path="ComunicaçãoDireta" element={<ComunicacaoDireta/>} />
+      <Route path="ComunicaçãoIndireta" element={<ComunicacaoIndireta/>} />
+      <Route path="UseRef" element={<UseRef/>} />
+      <Route path="UseEffect" element={<UseEffect/>} />
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )

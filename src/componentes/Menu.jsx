@@ -20,12 +20,7 @@ export function Menu() {
       hover:bg-zinc-900 `;
     let ativo = "border-r-4 border-solid border-slate-800 ";
 
-    // let final
-    // if (props.isActive){
-    //     final = estilo + ativo
-    // } else {
-    //     final = estilo
-    // }
+  
     let final = props.isActive ? estilo + ativo : estilo;
 
     return final;
@@ -94,17 +89,28 @@ export function Menu() {
         </NavLink>
 
         <NavLink to="ComunicaçãoIndireta" className={getEstilo}>
-          <IconSquareRoundedNumber1/>
+          <IconSquareRoundedNumber2/>
           Indireta
         </NavLink>
+
+
+        <span className="pt-4 pl-3 text-xs text-zinc-500">Estado</span>
+
+        <NavLink to="UseRef" className={getEstilo}>
+          <IconSquareRoundedNumber1/>
+          UseRef
+        </NavLink>
+
+        <NavLink to="UseEffect" className={getEstilo}>
+          <IconSquareRoundedNumber2/>
+          UseEffect
+        </NavLink>
+
 
 
 
       </nav>
 
-      <footer className="absolute bottom-0 p-2 flex justify-center">
-        <span>Desenvolvimento Web 2</span>
-      </footer>
     </aside>
   );
 }
