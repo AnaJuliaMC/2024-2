@@ -18,20 +18,20 @@ export function UseRef(){
         <Pagina titulo="useREf" subtitulo="Hooks Básicos">
 
             <div className="flex flex-col">
-                {`Ref: ${referencia.current} | State: ${estado}`}
+                {`Ref: ${referencia.current}   |  State: ${estado}`}
+
+                <div>
+                    <button className="bg-red-400 p-3"
+                    onClick={IncrementarReferencia}>Ref +
+                    </button>
+
+
+                    <button className="bg-purple-400 p-3"
+                    onClick={incrementarEstado}>State +
+                    </button>
+                </div>
             </div>
-
-
-            <div>
-                <button className="bg-red-400 p-3"
-                onClick={IncrementarReferencia}>Ref +
-                </button>
-
-
-                <button className="bg-purple-400 p-3"
-                onClick={incrementarEstado}>State +
-                </button>
-            </div>
+           
         </Pagina>
     )
 }
