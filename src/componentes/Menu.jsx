@@ -58,6 +58,12 @@ export function Menu() {
           <IconInfoCircle />
           Sobre
         </NavLink>
+        <NavLink to="tradutor" className={getEstilo}>
+          <IconSquareRoundedNumber1 />
+          Tradutor
+        </NavLink>
+
+        
 
         <span className="pt-4 pl-3 text-xs text-zinc-500">Estado</span>
 
@@ -68,7 +74,10 @@ export function Menu() {
 
         <NavLink to="comEstado" className={getEstilo}>
           <IconSquareRoundedNumber2 />
-          Com Estado
+          Com Estado <NavLink to="sobre" className={getEstilo}>
+          <IconInfoCircle />
+          Sobre
+        </NavLink>
         </NavLink>
 
         <NavLink to="campoTexto" className={getEstilo}>
